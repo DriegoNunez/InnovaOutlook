@@ -5,9 +5,9 @@
   "id": "d35ad598-9ed0-41db-b780-864f4c8fef0f",
   "developer": {
     "name": "Innova",
-    "websiteUrl": "https://localhost:3000/support.html",
-    "privacyUrl": "https://localhost:3000/privacy.html",
-    "termsOfUseUrl": "https://localhost:3000/terms.html"
+    "websiteUrl": "https://driegonunez.github.io/InnovaOutlook/support.html",
+    "privacyUrl": "https://driegonunez.github.io/InnovaOutlook/privacy.html",
+    "termsOfUseUrl": "https://driegonunez.github.io/InnovaOutlook/terms.html"
   },
   "name": {
     "short": "Innova Attachment List",
@@ -24,7 +24,7 @@
   },
   "accentColor": "#0F6CBD",
   "validDomains": [
-    "localhost"
+    "driegonunez.github.io"
   ],
   "extensions": [
     {
@@ -47,7 +47,7 @@
           "id": "CommandsRuntime",
           "type": "general",
           "code": {
-            "page": "https://localhost:3000/src/commands/commands.html"
+            "page": "https://driegonunez.github.io/InnovaOutlook/src/commands/commands.html"
           },
           "lifetime": "short",
           "actions": [
@@ -73,15 +73,15 @@
                   "icons": [
                     {
                       "size": 16,
-                      "url": "https://localhost:3000/assets/icon-16.png"
+                      "url": "https://driegonunez.github.io/InnovaOutlook/assets/icon-16.png"
                     },
                     {
                       "size": 32,
-                      "url": "https://localhost:3000/assets/icon-32.png"
+                      "url": "https://driegonunez.github.io/InnovaOutlook/assets/icon-32.png"
                     },
                     {
                       "size": 80,
-                      "url": "https://localhost:3000/assets/icon-80.png"
+                      "url": "https://driegonunez.github.io/InnovaOutlook/assets/icon-80.png"
                     }
                   ],
                   "controls": [
@@ -92,15 +92,15 @@
                       "icons": [
                         {
                           "size": 16,
-                          "url": "https://localhost:3000/assets/icon-16.png"
+                          "url": "https://driegonunez.github.io/InnovaOutlook/assets/icon-16.png"
                         },
                         {
                           "size": 32,
-                          "url": "https://localhost:3000/assets/icon-32.png"
+                          "url": "https://driegonunez.github.io/InnovaOutlook/assets/icon-32.png"
                         },
                         {
                           "size": 80,
-                          "url": "https://localhost:3000/assets/icon-80.png"
+                          "url": "https://driegonunez.github.io/InnovaOutlook/assets/icon-80.png"
                         }
                       ],
                       "supertip": {

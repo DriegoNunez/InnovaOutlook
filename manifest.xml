@@ -11,11 +11,11 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Innova Attachment List" />
   <Description DefaultValue="Inserts a formatted list of non-inline attachments into a compose message." />
-  <IconUrl DefaultValue="https://localhost:3000/assets/icon-80.png" />
-  <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-80.png" />
-  <SupportUrl DefaultValue="https://localhost:3000/support.html" />
+  <IconUrl DefaultValue="https://driegonunez.github.io/InnovaOutlook/assets/icon-80.png" />
+  <HighResolutionIconUrl DefaultValue="https://driegonunez.github.io/InnovaOutlook/assets/icon-80.png" />
+  <SupportUrl DefaultValue="https://driegonunez.github.io/InnovaOutlook/support.html" />
   <AppDomains>
-    <AppDomain>https://localhost:3000</AppDomain>
+    <AppDomain>https://driegonunez.github.io/InnovaOutlook</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Mailbox" />
@@ -28,7 +28,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://localhost:3000/src/commands/commands.html" />
+        <SourceLocation DefaultValue="https://driegonunez.github.io/InnovaOutlook/src/commands/commands.html" />
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -76,12 +76,12 @@
       </Hosts>
       <Resources>
         <bt:Images>
-          <bt:Image id="Icon.16" DefaultValue="https://localhost:3000/assets/icon-16.png" />
-          <bt:Image id="Icon.32" DefaultValue="https://localhost:3000/assets/icon-32.png" />
-          <bt:Image id="Icon.80" DefaultValue="https://localhost:3000/assets/icon-80.png" />
+          <bt:Image id="Icon.16" DefaultValue="https://driegonunez.github.io/InnovaOutlook/assets/icon-16.png" />
+          <bt:Image id="Icon.32" DefaultValue="https://driegonunez.github.io/InnovaOutlook/assets/icon-32.png" />
+          <bt:Image id="Icon.80" DefaultValue="https://driegonunez.github.io/InnovaOutlook/assets/icon-80.png" />
         </bt:Images>
         <bt:Urls>
-          <bt:Url id="Commands.Url" DefaultValue="https://localhost:3000/src/commands/commands.html" />
+          <bt:Url id="Commands.Url" DefaultValue="https://driegonunez.github.io/InnovaOutlook/src/commands/commands.html" />
         </bt:Urls>
         <bt:ShortStrings>
           <bt:String id="Group.Label" DefaultValue="Innova Tools" />

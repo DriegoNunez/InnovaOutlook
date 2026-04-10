@@ -30,9 +30,9 @@ Schedule.xlsx
 
 ## Local hosting
 
-Office add-ins must be served over HTTPS. This manifest is preconfigured for `https://localhost:3000`.
+Office add-ins must be served over HTTPS. This repository now defaults to the GitHub Pages host at `https://driegonunez.github.io/InnovaOutlook`.
 
-This repo includes a small ASP.NET Core host in `host/` that serves the repository root over HTTPS on port `3000`.
+This repo still includes a small ASP.NET Core host in `host/` for local troubleshooting, but the default manifests now point to GitHub Pages instead of localhost.
 
 Start it from the repository root:
 
@@ -91,7 +91,7 @@ That creates:
 
 - `dist/InnovaAttachmentList-M365.zip`
 
-Upload that zip in Teams or the Microsoft 365 app upload flow. Keep the local host running while testing because the unified manifest points to `https://localhost:3000`.
+Upload that zip in Teams or the Microsoft 365 app upload flow.
 
 For a GitHub Pages-backed deployment, upload `dist\github-pages\InnovaAttachmentList-M365.zip` instead.
 
