@@ -27,6 +27,8 @@
       return;
     }
 
+    notify("Preparing the attachment list...");
+
     item.getAttachmentsAsync(function (result) {
       if (result.status !== Office.AsyncResultStatus.Succeeded) {
         reportError(event, "Unable to read the message attachments.");
@@ -83,12 +85,13 @@
         coercionType: isHtmlBody ? Office.CoercionType.Html : Office.CoercionType.Text
       };
 
-      item.body.setSelectedDataAsync(content, options, function (insertResult) {
+      item.body.prependAsync(content, options, function (insertResult) {
         if (insertResult.status !== Office.AsyncResultStatus.Succeeded) {
-          reportError(event, "Unable to insert the attachment list at the current cursor position.");
+          reportError(event, "Unable to insert the attachment list into the message body.");
           return;
         }
 
+        notify("Attachment list inserted.");
         event.completed();
       });
     });
