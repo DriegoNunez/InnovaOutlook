@@ -1,0 +1,130 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.24/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.24",
+  "version": "1.0.0",
+  "id": "d35ad598-9ed0-41db-b780-864f4c8fef0f",
+  "developer": {
+    "name": "Innova",
+    "websiteUrl": "https://localhost:3000/support.html",
+    "privacyUrl": "https://localhost:3000/privacy.html",
+    "termsOfUseUrl": "https://localhost:3000/terms.html"
+  },
+  "name": {
+    "short": "Innova Attachment List",
+    "full": "Innova Attachment List for Outlook"
+  },
+  "description": {
+    "short": "Insert a formatted list of message attachments while composing in Outlook.",
+    "full": "Adds an Outlook compose ribbon button that inserts an Encl. list of non-inline attachments at the current cursor position."
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png",
+    "color32x32": "color32x32.png"
+  },
+  "accentColor": "#0F6CBD",
+  "validDomains": [
+    "localhost"
+  ],
+  "extensions": [
+    {
+      "requirements": {
+        "scopes": [
+          "mail"
+        ],
+        "formFactors": [
+          "desktop"
+        ],
+        "capabilities": [
+          {
+            "name": "Mailbox",
+            "minVersion": "1.8"
+          }
+        ]
+      },
+      "runtimes": [
+        {
+          "id": "CommandsRuntime",
+          "type": "general",
+          "code": {
+            "page": "https://localhost:3000/src/commands/commands.html"
+          },
+          "lifetime": "short",
+          "actions": [
+            {
+              "id": "addAttachmentList",
+              "type": "executeFunction"
+            }
+          ]
+        }
+      ],
+      "ribbons": [
+        {
+          "contexts": [
+            "mailCompose"
+          ],
+          "tabs": [
+            {
+              "builtInTabId": "TabDefault",
+              "groups": [
+                {
+                  "id": "Innova.ComposeGroup",
+                  "label": "Innova Tools",
+                  "icons": [
+                    {
+                      "size": 16,
+                      "url": "https://localhost:3000/assets/icon-16.png"
+                    },
+                    {
+                      "size": 32,
+                      "url": "https://localhost:3000/assets/icon-32.png"
+                    },
+                    {
+                      "size": 80,
+                      "url": "https://localhost:3000/assets/icon-80.png"
+                    }
+                  ],
+                  "controls": [
+                    {
+                      "id": "Innova.InsertAttachmentList",
+                      "type": "button",
+                      "label": "Insert Attachment List",
+                      "icons": [
+                        {
+                          "size": 16,
+                          "url": "https://localhost:3000/assets/icon-16.png"
+                        },
+                        {
+                          "size": 32,
+                          "url": "https://localhost:3000/assets/icon-32.png"
+                        },
+                        {
+                          "size": 80,
+                          "url": "https://localhost:3000/assets/icon-80.png"
+                        }
+                      ],
+                      "supertip": {
+                        "title": "Insert Attachment List",
+                        "description": "Insert an Encl. list for all non-inline attachments at the current cursor position."
+                      },
+                      "actionId": "addAttachmentList"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "alternates": [
+        {
+          "hide": {
+            "customOfficeAddin": {
+              "officeAddinId": "7f3f46bd-7fef-49ee-9f8c-6f94bf7be001"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
