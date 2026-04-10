@@ -1,9 +1,23 @@
 (function () {
-  Office.onReady(function () {
-    if (Office.actions && typeof Office.actions.associate === "function") {
-      Office.actions.associate("addAttachmentList", addAttachmentList);
+  registerActions();
+
+  if (typeof Office !== "undefined" && typeof Office.onReady === "function") {
+    Office.onReady(function () {
+      registerActions();
+    });
+  }
+
+  function registerActions() {
+    if (typeof Office === "undefined") {
+      return;
     }
-  });
+
+    if (!Office.actions || typeof Office.actions.associate !== "function") {
+      return;
+    }
+
+    Office.actions.associate("addAttachmentList", addAttachmentList);
+  }
 
   function addAttachmentList(event) {
     var item = Office.context.mailbox.item;
